@@ -1,65 +1,33 @@
 <app-navbar></app-navbar>
 <div class="container">
-    <div class="row">
-        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <div class="row g-3 mt-4">
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+  <div class="roe g-3">
+    <table class="table">
+      <thead>
+        <tr>
+          
+          <th scope="col"> Name </th>
+          <th scope="col"> Designation </th>
+          <th scope="col"> Salary </th>
+          <th scope="col"> Contact </th>
+          <th scope="col"> Company </th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let i of data">
+          
+          <td> {{i.Name}} </td>
+          <td> {{i.Designation}} </td>
+          <td> {{i.Salary}} </td>
+          <td> {{i.Contact}} </td>
+          <td> {{i.Company}} </td>
+        </tr>
+        
+      </tbody>
 
-                    <div class="card" >
-                        <img class="rounded-circle mx-auto" height="200px" width="200px" src="https://images.creativemarket.com/0.1.0/ps/4178348/1820/1211/m1/fpnw/wm1/z5swmjj7ogkxq2s7eu0drlrvan90ie7eg90ttzmmi8r8zrltmghaobbwrimiuvm2-.jpg?1521804404&s=1f0f40b1dd6a6bc4cbc8d4aa78451adc" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title text-center"> SUSIYANA </h5>
-                          <p class="card-text text-center"> Id : 20125 </p>
-                          <p class="card-text text-center"> Place : Ernakulam </p>
-                          <p class="card-text text-center"> Phone : 6952589632 </p>
-                        </div>
-                      </div>
-
-                </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-
-
-                    <div class="card" >
-                        <img class="rounded-circle mx-auto" height="200px" width="200px" src="https://th.bing.com/th/id/OIP.Ja2_A2_4bSMQaUPQoSto5AHaH4?pid=ImgDet&rs=1" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title text-center"> LUCIFER </h5>
-                          <p class="card-text text-center"> Id : 41125 </p>
-                          <p class="card-text text-center"> Place : Aluva </p>
-                          <p class="card-text text-center"> Phone : 7752589632 </p>
-                        </div>
-                      </div>
-
-                </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-
-                    <div class="card" >
-                        <img class="rounded-circle mx-auto" height="200px" width="200px" src="https://th.bing.com/th/id/OIP.f6UDgCoNBsUxrp0wzt42RAHaE7?pid=ImgDet&rs=1" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title text-center"> AGNEL </h5>
-                          <p class="card-text text-center"> Id : 521125 </p>
-                          <p class="card-text text-center"> Place : Idukki </p>
-                          <p class="card-text text-center"> Phone : 9952589632 </p>
-                        </div>
-                      </div>
-
-                    
-                </div>
-
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-
-                    <div class="card" >
-                        <img class="rounded-circle mx-auto" height="200px" width="200px" src="https://th.bing.com/th/id/OIP.PA1GwuNojlc37Ov1RQPa6AHaE7?pid=ImgDet&rs=1" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title text-center"> TUNA </h5>
-                          <p class="card-text text-center"> Id : 981125 </p>
-                          <p class="card-text text-center"> Place : Korea </p>
-                          <p class="card-text text-center"> Phone : 7152589632 </p>
-                        </div>
-                      </div>
-
-                </div>
-                
-            </div>
-        </div>
-    </div>
+    </table>
+  </div>
 </div>
+
+
+ 
