@@ -10,6 +10,7 @@ import { Route, RouterModule, Routes } from '@angular/router';
 import { PatientViewallComponent } from './patient-viewall/patient-viewall.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
+import { UserloginComponent } from './userlogin/userlogin.component';
 
 const myRoute:Routes=[
   {
@@ -31,6 +32,10 @@ const myRoute:Routes=[
   {
     path:"login",
     component:LoginComponent
+  },
+  {
+    path:"userlogin",
+    component:UserloginComponent
   }
  
   
@@ -45,7 +50,8 @@ const myRoute:Routes=[
     PatientDeleteComponent,
     PatientViewallComponent,
     NavbarComponent,
-    LoginComponent
+    LoginComponent,
+    UserloginComponent
   ],
   imports: [
     BrowserModule,
